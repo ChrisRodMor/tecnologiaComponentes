@@ -1,22 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import CustomInput from "./CustomInput";
+import Button from "./Button";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Primer Componente</h1>
+        <CustomInput label={"Nombre"} disabled={false} tipo={"text"} />
+        <CustomInput label={"Apellido"} disabled={false} tipo ={"password"}/>
+        
+        <Button text="presionar" disabled={false} />
       </header>
     </div>
   );
