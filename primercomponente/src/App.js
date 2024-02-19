@@ -8,11 +8,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Primer Componente</h1>
-        <CustomInput label={"Nombre"} disabled={false} tipo={"text"} />
-        <CustomInput label={"Apellido"} disabled={false} tipo ={"password"}/>
+        <h1>Nuevo usuario</h1>
+
+        <CustomInput label={"Usuario"} disabled={false} tipo={"text"} />
+        <CustomInput label={"Correo"} disabled={false} tipo={"text"} />
+        <CustomInput label={"Contraseña"} disabled={false} tipo ={"password"}/>
         
-        <Button text="presionar" disabled={false} />
+        <div>
+          <Button text="cancelar" disabled={true} />
+          <Button text="aceptar" disabled={false} />
+        </div>
+
       </header>
     </div>
   );
