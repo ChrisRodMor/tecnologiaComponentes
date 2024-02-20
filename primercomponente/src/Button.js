@@ -1,6 +1,6 @@
 function Button({ text, disabled }) {
   return (
-    <button type="button" disabled={disabled}> {text} </button>
+    <button style={{padding: '5px 13px', color: 'white', cursor: 'pointer', backgroundColor: 'purple'}} type="button" disabled={disabled}> {text} </button>
   );
 }
 

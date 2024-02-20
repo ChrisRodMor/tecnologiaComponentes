@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import CustomInput from "./CustomInput";
 import Button from "./Button";
@@ -7,16 +6,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Nuevo usuario</h1>
 
-        <CustomInput label={"Usuario"} disabled={false} tipo={"text"} />
-        <CustomInput label={"Correo"} disabled={false} tipo={"text"} />
-        <CustomInput label={"Contraseña"} disabled={false} tipo ={"password"}/>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <CustomInput label={"Usuario"} disabled={false} tipo={"text"}/>
+          <CustomInput label={"Correo"} disabled={false} tipo={"text"}/>
+          <CustomInput label={"Contraseña"} disabled={false} tipo ={"password"}/>
+        </div>
         
-        <div>
-          <Button text="cancelar" disabled={true} />
-          <Button text="aceptar" disabled={false} />
+        <div style={{display:"flex", justifyContent:"center", marginTop:20, flexDirection: 'row-reverse'}}>
+        <CustomInput label={"Acepto los terminos y condiciones"} disabled={false} tipo ={"checkbox"}/>
+        </div>
+
+        <div style={{ marginTop: '20px' }}>
+          <Button text="Cancelar" disabled={true}/>
+          <span style={{ marginRight: '20px' }}></span>
+          <Button text="Aceptar" disabled={false} />
         </div>
 
       </header>

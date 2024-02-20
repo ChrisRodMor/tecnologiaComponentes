@@ -1,8 +1,8 @@
 function CustomInput({label, disabled, tipo}) {
     return (
       <>
-        <label htmlFor="">{label}</label>
-        <input type={tipo} disabled={disabled} />
+        <label htmlFor="" style={{textAlign: 'left'}}>{label}</label>
+        <input style={{height: '2em'}} type={tipo} disabled={disabled}/>
       </>
     );
   }
