@@ -13,7 +13,7 @@
   
 .custom-button {
     padding: 10px 20px;
-    border: 1px solid #999999;
+    border: 1px solid #ccc;
     border-left: none;
     border-radius: 0 7px 7px 0;
     background-color: white;
@@ -22,5 +22,5 @@
 }
 
 .custom-button:hover {
-    background-color: #000000; /* Cambiamos el color de fondo al oscurecerse */
+    background-color: #e6e6e6; /* Cambiamos el color de fondo al oscurecerse */
   }
