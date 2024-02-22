@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  margin-left: 25vh;
+  margin-right: 25vh;
+  font-family:'Helvetica';
+  color: black;
+  background-color: #ffffff;
+}
+
+.App-header {
+  background-color: #ffffff;
+  border-bottom: 50px black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.App-body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.serchbar{
+  background-color: #ffffff;
+}
+

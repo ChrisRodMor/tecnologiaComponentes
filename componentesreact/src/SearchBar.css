@@ -1,0 +1,26 @@
+.custom-input-container {
+    display: flex;
+    align-items: center;
+}
+  
+.custom-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px 0 0 7px;
+    background-color: white;
+}
+  
+.custom-button {
+    padding: 10px 20px;
+    border: 1px solid #999999;
+    border-left: none;
+    border-radius: 0 7px 7px 0;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #000000; /* Cambiamos el color de fondo al oscurecerse */
+  }
