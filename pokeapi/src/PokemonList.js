@@ -110,7 +110,7 @@ function PokemonList() {
           </div>
         ))}
       </div>
-      {isSidebarOpen && <PokemonDetailsSidebar pokemon={expandedPokemon} onClose={() => setIsSidebarOpen(false)} />}
+      {isSidebarOpen && <PokemonDetailsSidebar pokemon={expandedPokemon} onClose={handleCloseDetails} />}
     </div>
   );
 }
